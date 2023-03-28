@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.MenuMate" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+</resources>

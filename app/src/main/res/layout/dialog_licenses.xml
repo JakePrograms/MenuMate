@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_black">
+
+    <RelativeLayout
+        android:id="@+id/licencesRelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/licencesBtnRelLayout"
+        android:padding="20dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtLicensesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="@string/licenses"
+                    android:textColor="@color/bright_white" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/license_logo"
+                    android:src="@drawable/ic_action_license" />
+
+                <TextView
+                    android:id="@+id/txtLicenses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLicensesTitle"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="@string/open_source"
+                    android:textColor="@color/bright_white" />
+
+                <TextView
+                    android:id="@+id/glideTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLicenses"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="@string/project_glide"
+                    android:textColor="@color/bright_white" />
+
+                <TextView
+                    android:id="@+id/glideGithub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/glideTitle"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:textColor="@color/bright_white" />
+
+                <TextView
+                    android:id="@+id/glideLicense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/glideGithub"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:textColor="@color/bright_white" />
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/licencesBtnRelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLicencesDismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_button"
+            android:text="@string/dismiss"
+            android:textColor="@color/bright_white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

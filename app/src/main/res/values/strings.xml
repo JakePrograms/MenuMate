@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MenuMate</string>
+    <string name="menumate">MenuMate</string>
+    <string name="categories">Categories</string>
+    <string name="open_source">This application uses Open Source components. You can find the source code of their open source projects along with license information below. We acknowledge and are grateful to these developers for their contributions to open source.</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="licenses">Licenses</string>
+    <string name="project_glide">Glide</string>
+    <string name="project_touch">Touch Image View</string>
+    <string name="food">food</string>
+    <string name="license_logo">license_logo</string>
+</resources>
